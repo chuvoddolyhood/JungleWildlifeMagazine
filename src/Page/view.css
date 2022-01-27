@@ -1,0 +1,49 @@
+.exit{
+    background-color: aqua;
+    width: 80px;
+    padding: 15px;
+    border-radius: 10%;
+    margin-top: 10px;
+    margin-left: 1030px;
+    text-align: center;
+    
+}
+.exit:hover{
+    background-color: coral;
+    cursor: pointer;
+}
+.wrapper1{
+    margin-top: 30px;
+    background-color: aqua;
+    display: block;
+    height: 800px;
+    width: 1000px;
+    margin-left: 150px;
+    border-radius: 2%;
+}
+
+.name{
+    float: left;
+    margin-top: 60px;
+    width: 300px;
+    height: 400px;
+    margin-left: 100px;
+}
+.image{
+    float: left;
+    width: 500px;
+    margin-top: 60px;
+}
+
+
+.image img{
+ width: 100%;
+ border-radius: 3%;
+}
+.name span{
+    font-size: 100px;
+    font-weight: bold;
+    color: brown;
+    font-family: 'Courier New', Courier, monospace;
+    
+}

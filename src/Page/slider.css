@@ -1,0 +1,24 @@
+.content{
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 550px;
+    height: 400px;
+    float: left;
+    background-color: blueviolet;
+}
+
+
+.slideshow{
+    margin-top: 50px;
+    width: 590px;
+    float: left;
+    margin-left: 40px;
+}
+slideshow1{
+   
+    width: 600px;
+}
+.imgslide img{
+    width: 100%;
+
+}
