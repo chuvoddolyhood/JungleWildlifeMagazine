@@ -1,50 +1,44 @@
-.Home:hover{
-    cursor: pointer;
-    color: #E32C2B;
-    
-
+.Home:hover {
+  cursor: pointer;
+  color: #e32c2b;
 }
-a{
-    color:aliceblue;
-    text-decoration: none;
+a {
+  color: aliceblue;
+  text-decoration: none;
 }
-a:hover{
-    cursor: pointer;
-    color: #E32C2B;
-    
+a:hover {
+  cursor: pointer;
+  color: #e32c2b;
 }
-.About:hover{
-    cursor: pointer;
-    color: #E32C2B;
- 
+.About:hover {
+  cursor: pointer;
+  color: #e32c2b;
 }
-.List:hover{
-    cursor: pointer;
-    color: #E32C2B;
+.List:hover {
+  cursor: pointer;
+  color: #e32c2b;
 }
-.Logo img{
- width: 60%;
- margin-top: 10px;
-padding-left: 90px;
-
-
+.Logo img {
+  width: 50%;
+  margin-top: -3px;
+  padding-left: 90px;
 }
-.fas{
-    color:white;
-    padding-top: 5px;
-    padding-left: 2px;
-    cursor: pointer;
+.fas {
+  color: white;
+  padding-top: 5px;
+  padding-left: 2px;
+  cursor: pointer;
 }
-.input{
-    background-color: transparent;
-    outline: none;
-    border: none;
-    color:white;
-    font-family: sans-serif;
-    width: 220px;
-    margin-left: 3px;
-    letter-spacing: 0.15em;
+.input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  font-family: sans-serif;
+  width: 220px;
+  margin-left: 3px;
+  letter-spacing: 0.15em;
 }
-::placeholder{
-    color: aliceblue;
+::placeholder {
+  color: aliceblue;
 }

@@ -1,88 +1,109 @@
-.card-body img{
-    width: 100%;
-    height: 146.667px;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
+.card-body img {
+  width: 100%;
+  height: 146.667px;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
 }
-.card{
-    height: 250px;
-    width: 220px;
-    float: left;
-    padding: 10px;
-    margin-top: 10px;
-    
-
-  
+.card {
+  height: 250px;
+  width: 220px;
+  float: left;
+  padding: 10px;
+  margin-top: 10px;
 }
-.card-body{
-    
-    box-shadow: 0 2px 20px gray;
-    border-radius: 5%;
-  
-    
+.card-body {
+  box-shadow: 0 2px 20px gray;
+  border-radius: 5%;
 }
-.card:hover{
-    transform: scale(1.02);
+.card:hover {
+  transform: scale(1.02);
 }
 
-h3{
-    margin-left: 10px;
-    
+h3 {
+  margin-left: 10px;
 }
-.card-btn{
-    margin-left: 20px;
-    width: 180px;
-    margin-bottom: 13px;
-    border-radius: 5%;
-    border: 2px solid sienna;
-    color: sienna;
+.card-btn {
+  margin-left: 20px;
+  width: 180px;
+  margin-bottom: 13px;
+  border-radius: 5%;
+  border: 2px solid #e32c2b;
+  color: #e32c2b;
 }
-.card-btn:hover{
-    background-color: sienna;
-    color: snow;
-    cursor: pointer;
-}
-
-
-
-
-
-
-.Lienhe{
-    
-    width: 1000px;
-    height: 800px;
-    display: flex;
-    margin:auto;
-    
+.card-btn:hover {
+  background-color: #e32c2b;
+  color: snow;
+  cursor: pointer;
 }
 
-.thanhvien{
-    width: 400px;
-    height: 500px;
-    border-radius: 2%;
-    margin-left: 25px;
-    margin-top: 100px;
-    
+.Lienhe {
+  width: 1000px;
+  height: 550px;
+  display: flex;
+  margin: auto;
 }
-.avt img{
-    width: 70%;
-   margin-left: 46.25px;
-    
+
+.thanhvien {
+  width: 400px;
+  height: 500px;
+  border-radius: 2%;
+  margin-left: 25px;
+  margin-top: 100px;
+}
+.avt img {
+  width: 50%;
+  margin-left: 77px;
 }
 
 .tenThanhvien {
-    padding-top: 20px;
-    text-align: center;
-    font-family: sans-serif;
-    padding-bottom: 15px;
-
-
+  padding-top: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  padding-bottom: 15px;
 }
-.tenThanhvien span{
-    color: rgb(20, 27, 27);
-    font-size: 25px;
+.tenThanhvien span {
+  color: rgb(20, 27, 27);
+  font-size: 20px;
+  font-weight: bold;
 }
-.tughi span{
-    font-family: sans-serif;
+.tughi {
+  text-align: center;
+}
+.tughi span {
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.kinhnghiem {
+  font-family: sans-serif;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  margin-top: 20px;
+}
+.logocontact {
+  float: left;
+  width: 500px;
+}
+.contact {
+  height: 200px;
+  background-color: #fff3e7;
+}
+.logocontact p {
+  margin-left: 100px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.diachi {
+  float: left;
+  margin-left: 350px;
+  width: 400px;
+}
+.address {
+  align-items: center;
+  display: flex;
+}
+.address span {
+  margin-left: 5px;
 }

@@ -2,7 +2,10 @@ import React,{useEffect,useState}  from 'react'
 import styled from 'styled-components';
 import './page.css';
 import './slider.css';
-import logo1 from './../img/logo1.png';
+import logo1 from './../img/logoff.png';
+import l1 from './../img/l1.jpg';
+import l2 from './../img/l2.jpg';
+import l3 from './../img/l3.jpg';
 import {Link as Link2} from 'react-router-dom';
 import List1 from './List1';
 import {Link as Link1} from 'react-scroll';
@@ -11,14 +14,21 @@ import img1 from "./../img/img2.png";
 import img2 from "./../img/img3.png";
 import hung from "./../img/hung2.png";
 import nghia from "./../img/nghia.png";
+import minh from "./../img/minh.png";
 import SearchIcon from '@mui/icons-material/Search';
 import "./list.css";
 import fireDb from "../firebase";
-
+import { useHistory } from 'react-router-dom';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import HomeIcon from '@mui/icons-material/Home';
+import ScrollToTop from 'react-router-scroll-top';
 const Container = styled.div`
     height: 80px;
     background-color:#2C6C70;
-
+    position: fixed;
+    top:0;
+    z-index: 10;
+    width:100%;
    `
 const Wrapper = styled.div`
 
@@ -65,14 +75,7 @@ margin-left:60px;
 
 
 `
-const Title1 = styled.h2`
-width: 350px;
 
-border-bottom: 3px solid rgb(3, 28, 28);
-font-family: sans-serif;
-letter-spacing: 0.1em;
-margin-left:30px;
-`
 const Main = styled.div`
 
 `
@@ -89,11 +92,14 @@ const Navbar = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1300,
+        autoplaySpeed: 1800,
         
       };
       const [data,setData] = useState({});
-
+      const [search,setSearch]=useState("");
+      
+      const history =useHistory();
+      
   useEffect(()=>{
     fireDb.child(`junglewildlifemagazine`).on("value",(snapshot)=>{
       if(snapshot.val() !== null ){
@@ -108,6 +114,11 @@ const Navbar = () => {
     };
   }, []);
 
+const handleSubmit = (e) =>{
+  e.preventDefault();
+  history.push(`/search?tenDiaphuong=${search}`);
+  setSearch("");
+};
 
 
     return (
@@ -129,38 +140,47 @@ const Navbar = () => {
               
               
               <Search>
-                <form>
-                <input className='input' placeholder='TÌM KIẾM'
+                <form onSubmit={handleSubmit}>
+                <input className='input' placeholder='TÌM KIẾM' 
+                type="text" 
+                onChange={(e)=>setSearch(e.target.value)}
+                value={search} 
                
+
                 />
                 </form>
-                <i class="fas fa-search" type="submit"></i>
+                <i class="fas fa-search"></i>
               </Search>
               
            </Wrapper>
        </Container>
        <div className='slider'>
         <div className='content'>
-
+          <h3>Về chúng tôi</h3>
+          <h1>Jungle Wildlife Magazine</h1>
+          <p>Là một tạp chí trực tuyến trưng bày hình ảnh và thông tin tất cả các động vật của rừng nhiệt đới trong khu vực Đồng bằng Sông Cửu Long cũng như trong hệ sinh thái động vật sinh sống trong khu vực châu thổ sông Mekong. Chúng tôi mang sứ mệnh truyền tải thông điệp về sự sẻ chia chung tay bảo vệ nguồn đa dạng sinh học và thúc đẩy quá trình bảo tồn động thực vật quý hiếm trên thế giới</p>
         </div>
            <div className='slideshow'>
       
         <Slider {...settings}>
           <div className='slideshow1'>
-            <h3 className='imgslide'><img src={img1}></img></h3>
+            <h3 className='imgslide'><img src={l1}></img></h3>
           </div>
           <div>
-          <h3 className='imgslide'>  <img src={img2}></img></h3>
+          <h3 className='imgslide'>  <img src={l2}></img></h3>
+          </div>
+          <div>
+          <h3 className='imgslide'>  <img src={l3}></img></h3>
           </div>
          
         </Slider>
       </div>
       </div>
-        <Title1>
+        <div className='title1'>
         
-                    DANH SÁCH ĐỘNG VẬT
+                  <h2>  DANH SÁCH ĐỘNG VẬT </h2>
           
-       </Title1>
+       </div>
           <Container1>
         {Object.keys(data).map((id) =>{
           return(
@@ -168,7 +188,8 @@ const Navbar = () => {
             <div className="card-body">
               <img src={data[id].img1}></img>
               <h3>{data[id].tenDiaphuong}</h3>
-                <Link2 to={`/view/${id}`} target="_blank"><button className="card-btn" ><SearchIcon /></button></Link2> 
+              <Link1 activeClass="active" className="test1" to="logo" spy={true} smooth={true} duration={800} > <Link2 to={`/view/${id}`} ><button className="card-btn" ><SearchIcon /></button></Link2> </Link1>
+                 
              
   
             </div>
@@ -189,7 +210,10 @@ const Navbar = () => {
             <span>Nguyễn Bội Hưng</span>
             </div>
             <div className='tughi'>
-            <span>Trong trận đấu với Reims rạng sáng nay, các cầu thủ Paris Saint-Germain đã ra sân với những chiếc áo đấu in tiếng TQ. Bởi trận đấu này có sự hiện diện của Đại Sứ Trung Quốc tại Pháp và nghệ sĩ dương cầm Lang Lang tới dự khán trận đấu.</span>
+            <span>Chủ tịch hiệp hội động vật hoang dã<br/> Việt Nam.</span>
+            </div>
+            <div className='kinhnghiem'>
+              <span>Ông Nguyễn Bội Hưng, người sáng lập và là Chủ tịch hiệp hội động vật hoang dã Việt Nam, đồng sáng lập Jungle Wildlife Magazine. Ông Hưng có hơn 20 năm kinh nghiệm trong lĩnh vực phát triển đa dạng sinh học và có kiến thức nghiệp vụ chuyên sâu ngành tài chính và quản trị doanh nghiệp.</span>
             </div>
           </div>
 
@@ -202,26 +226,42 @@ const Navbar = () => {
 
             </div>
             <div className='tughi'>
-                <span>Trong trận đấu với Reims rạng sáng nay, các cầu thủ Paris Saint-Germain đã ra sân với những chiếc áo đấu in tiếng TQ. Bởi trận đấu này có sự hiện diện của Đại Sứ Trung Quốc tại Pháp và nghệ sĩ dương cầm Lang Lang tới dự khán trận đấu. </span>
+                <span>Quyền giám đốc Tổ chức Quốc tế về Bảo tồn Thiên nhiên tại Việt Nam (WWF). </span>
+            </div>
+            <div className='kinhnghiem'>
+              <span>Có 10 năm kinh nghiệm quản lý nguồn nhân lực, 5 năm làm việc với các tổ chức toàn cầu thế giới và 18 năm kinh nghiệm trong lĩnh vực Công nghệ thông tin. Với kiến thức chuyên sâu về nguồn nhân lực trong lĩnh vực thiên nhiên và môi trường, ông Nghĩa hiện đang đảm nhận vai trò quản lý nguồn nhân lực làm việc tại Tổ chức Quốc tế về Bảo tồn Thiên nhiên tại Việt Nam (WWF Vietnam)</span>
             </div>
           </div>
 
 
           <div className='thanhvien'>
             <div className='avt'>
-                <img src={nghia}></img>
+                <img src={minh}></img>
             </div>
             <div className='tenThanhvien'>
                 <span>Phạm Hoàng Minh</span>
             </div>
             <div className='tughi'>
-              <span>Trong trận đấu với Reims rạng sáng nay, các cầu thủ Paris Saint-Germain đã ra sân với những chiếc áo đấu in tiếng TQ. Bởi trận đấu này có sự hiện diện của Đại Sứ Trung Quốc tại Pháp và nghệ sĩ dương cầm Lang Lang tới dự khán trận đấu.</span>
+              <span>Phóng viên Tổ chức Bảo tồn thiên nhiên tại Đông Nam Á (The Nature Conservancy).</span>
+            </div>
+            <div className='kinhnghiem'>
+              <span>Phóng viên Hoàng Minh – đồng sáng lập Jungle Wildlife Magazine. Ông đã có 30 năm làm việc trong lĩnh vực báo chí và làm việc tại 10 quốc gia Đông Nam Á. Ông là đồng tác giả của cuốn sách Những con vượn mong manh do Nothing xuất bản vào năm 20xx.</span>
             </div>
           </div>
 
 
       </div>
-
+        <div className="contact">
+          <div className="logocontact">
+          <p>Jungle Wildlife Magazine</p>
+          </div>
+          <div className='diachi'>
+          <h3>Địa chỉ</h3>
+         <div className='address'> <HomeIcon/><span>Đường 3/2, Xuân Khánh, Ninh Kiều, Cần Thơ</span></div><br/>
+         <div className='address'> <LocalPhoneIcon/><span>0344109778</span></div>
+         </div>
+       
+        </div>
 
        </Main>
     )

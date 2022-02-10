@@ -6,16 +6,24 @@ import About from './About';
 import List1 from './List1';
 import Title from './Title';
 import View from './View';
-import Home1 from './Home1';
+import Search from './Search';
 import { BrowserRouter,Link, Switch,Route } from 'react-router-dom';
+import ScrollToTop from 'react-router-scroll-top';
 const Home = () => {
     return (
         <div>
             <BrowserRouter>
             
             <Switch>
+                <ScrollToTop>
             <Route exact path="/" component={Navbar} />
+           
                  <Route path="/view/:id" component={View} />
+               
+
+           
+                 <Route path="/search" component={Search} />
+                 </ScrollToTop>
             </Switch>
            
             </BrowserRouter>

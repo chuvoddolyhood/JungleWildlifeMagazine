@@ -1,49 +1,85 @@
-.exit{
-    background-color: aqua;
-    width: 80px;
-    padding: 15px;
-    border-radius: 10%;
-    margin-top: 10px;
-    margin-left: 1030px;
-    text-align: center;
-    
-}
-.exit:hover{
-    background-color: coral;
-    cursor: pointer;
-}
-.wrapper1{
-    margin-top: 30px;
-    background-color: aqua;
-    display: block;
-    height: 800px;
-    width: 1000px;
-    margin-left: 150px;
-    border-radius: 2%;
+.wrapper1 {
+  margin-top: 30px;
+  background-color: white;
+  display: block;
+
+  width: 1000px;
+  margin-left: 150px;
+  border-radius: 2%;
 }
 
-.name{
-    float: left;
-    margin-top: 60px;
-    width: 300px;
-    height: 400px;
-    margin-left: 100px;
+.name {
+  margin-top: 30px;
+  text-align: center;
+  width: 1260px;
+  height: 100px;
 }
-.image{
-    float: left;
-    width: 500px;
-    margin-top: 60px;
+.image {
+  float: left;
+  width: 500px;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
-
-.image img{
- width: 100%;
- border-radius: 3%;
+.image img {
+  width: 100%;
+  border-radius: 3%;
 }
-.name span{
-    font-size: 100px;
-    font-weight: bold;
-    color: brown;
-    font-family: 'Courier New', Courier, monospace;
-    
+.name span {
+  font-size: 100px;
+  font-weight: bold;
+  color: #2c6c70;
+  font-family: roboto;
+  letter-spacing: 0.05em;
+}
+.chitiet {
+  float: left;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+.table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 400px;
+}
+
+.table td,
+.table th {
+  border: 1px solid rgb(43, 37, 37);
+  padding: 8px;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.hinhthai {
+  width: 1000px;
+  height: 30px;
+  display: flex;
+}
+.hinhthai p {
+  height: 25px;
+  margin-top: 25px;
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 25px;
+}
+.chitietht {
+  margin-top: 30px;
+  margin-left: 30px;
+  font-size: 19px;
+}
+.chitietht p {
+  padding-top: 10px;
+}
+.ttbaoton {
+  margin-top: 50px;
+  margin-left: 30px;
+}
+.baoton {
+  width: 1000px;
+  text-align: center;
+}
+.slick-dots{
+  bottom: -5px;
 }

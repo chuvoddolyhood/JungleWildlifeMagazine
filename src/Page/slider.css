@@ -1,24 +1,37 @@
-.content{
-    margin-top: 50px;
-    margin-left: 50px;
-    width: 550px;
-    height: 400px;
-    float: left;
-    background-color: blueviolet;
+.content {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 550px;
+  height: 400px;
+  float: left;
 }
 
-
-.slideshow{
-    margin-top: 50px;
-    width: 590px;
-    float: left;
-    margin-left: 40px;
+.slideshow {
+  margin-top: 50px;
+  width: 590px;
+  float: left;
+  margin-left: 40px;
 }
-slideshow1{
-   
-    width: 600px;
+slideshow1 {
+  width: 600px;
 }
-.imgslide img{
-    width: 100%;
+.imgslide img {
+  width: 100%;
+}
+.content h3{
+  margin-top: 110px;
+  margin-left: 0;
+  color: #e32c2b;
+}
+.content h1{
+  color: #2c6c70;
+  font-family: sans-serif;
+  margin-top: -10px;
+}
+.content p{
+  margin-top: -10px;
+}
 
+.title1 h2{
+text-align: center  ;
 }
