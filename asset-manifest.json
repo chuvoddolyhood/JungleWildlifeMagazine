@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/JungleWildlifeMagazine/static/css/main.20740659.css",
+    "main.js": "/JungleWildlifeMagazine/static/js/main.1428e6c2.js",
+    "static/js/787.d5553b83.chunk.js": "/JungleWildlifeMagazine/static/js/787.d5553b83.chunk.js",
+    "static/media/nghia.png": "/JungleWildlifeMagazine/static/media/nghia.ff621986b20e024e6bb1.png",
+    "static/media/l3.jpg": "/JungleWildlifeMagazine/static/media/l3.8602f4e5a1a077d34578.jpg",
+    "static/media/hung2.png": "/JungleWildlifeMagazine/static/media/hung2.802cd6ac5fbf522a4263.png",
+    "static/media/l2.jpg": "/JungleWildlifeMagazine/static/media/l2.b5a79d560112f7008a68.jpg",
+    "static/media/minh.png": "/JungleWildlifeMagazine/static/media/minh.9f75c5d3953b4908e82e.png",
+    "static/media/img2.png": "/JungleWildlifeMagazine/static/media/img2.cd96bb212739a44367fe.png",
+    "static/media/img3.png": "/JungleWildlifeMagazine/static/media/img3.2ae00e324662c20ab675.png",
+    "static/media/l1.jpg": "/JungleWildlifeMagazine/static/media/l1.f2f184e9c26eb7a3a3de.jpg",
+    "static/media/logoff.png": "/JungleWildlifeMagazine/static/media/logoff.139ffea13afa8983ce25.png",
+    "index.html": "/JungleWildlifeMagazine/index.html",
+    "main.20740659.css.map": "/JungleWildlifeMagazine/static/css/main.20740659.css.map",
+    "main.1428e6c2.js.map": "/JungleWildlifeMagazine/static/js/main.1428e6c2.js.map",
+    "787.d5553b83.chunk.js.map": "/JungleWildlifeMagazine/static/js/787.d5553b83.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20740659.css",
+    "static/js/main.1428e6c2.js"
+  ]
+}
