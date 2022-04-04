@@ -129,10 +129,10 @@ const handleSubmit = (e) =>{
               <img src={logo1}></img>
               </Logo>
               <Home className='Home'>
-                  TRANG CHỦ
+                <Link1 activeClass="active" className="test1" to="slider" spy={true} smooth={true} duration={500} > HOME </Link1>
               </Home>
               <List className='List'>
-                <Link1 activeClass="active" className="test1" to="card" spy={true} smooth={true} duration={500} >  DANH SÁCH </Link1>
+                <Link1 activeClass="active" className="test1" to="card-body" spy={true} smooth={true} duration={500} >  DANH SÁCH </Link1>
               </List >
               <About className='About'>
               <Link1 activeClass="active" className="test1" to="Lienhe" spy={true} smooth={true} duration={800} >  LIÊN HỆ </Link1>
